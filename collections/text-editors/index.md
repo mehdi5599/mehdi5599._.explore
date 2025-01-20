@@ -34,6 +34,10 @@ items:
  - orbitalquark/textadept
  - apache/netbeans
  - adsr/mle
+ - helix-editor/helix
+ - lapce/lapce
+ - zed-industries/zed
+ - KDE/kate
 
 display_name: Text editors
 created_by: leereilly

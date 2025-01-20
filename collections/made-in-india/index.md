@@ -23,7 +23,7 @@ items:
  - SigNoz/signoz
  - uvdesk/community-skeleton
  - CRED-CLUB/synth-android
- - resetercss/reseter.css
+ - kkrishguptaa/reseter.css
  - pupilfirst/pupilfirst
  - kadalu/kadalu
  - project-sunbird
@@ -47,6 +47,11 @@ items:
  - keploy/keploy
  - LambdaTest/test-at-scale
  - arnav-kr/json-formatter
+ - abhimanyu003/sttr
+ - juspay/hyperswitch
+ - nammayatri/nammayatri
+ - kubewall/kubewall
+ - Pujo-Atlas-Kolkata
 display_name: Made in India
 created_by: mvkaran
 image: made-in-india.png
