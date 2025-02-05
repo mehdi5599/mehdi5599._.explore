@@ -6,21 +6,30 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+  merge_group:
+
+permissions:
+  contents: read
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4.2.2
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@2654679fe7f7c29875c669398a8ec0791b8a64a1 # v1.215.0
         with:
           bundler-cache: true
 
       - name: Run linters
-        uses: wearerequired/lint-action@v2
+        if: ${{ github.event_name != 'merge_group' }}
+        uses: wearerequired/lint-action@548d8a7c4b04d3553d32ed5b6e91eb171e10e7bb # v2
         with:
           auto_fix: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.owner.login == github.repository_owner }}
           rubocop: true
           rubocop_command_prefix: bundle exec
+
+      - name: Skip with successful status
+        if: ${{ github.event_name == 'merge_group' }}
+        run: exit 0

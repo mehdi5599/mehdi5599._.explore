@@ -295,11 +295,35 @@ describe "topics" do
       it "has a valid short_description" do
         metadata = metadata_for(topics_dir, topic) || {}
 
-        if metadata["short_description"]
+        if (short_description = metadata["short_description"])
           valid_range = 1..MAX_SHORT_DESCRIPTION_LENGTH
-          current_length = metadata["short_description"].length
+          current_length = short_description.length
           assert valid_range.cover?(current_length),
                  "must have a short_description no more than #{MAX_SHORT_DESCRIPTION_LENGTH} " \
+                 "characters (currently #{current_length})"
+        end
+      end
+
+      it "has a valid display_name" do
+        metadata = metadata_for(topics_dir, topic) || {}
+
+        if (display_name = metadata["display_name"])
+          valid_range = 1..MAX_DISPLAY_NAME_LENGTH
+          current_length = display_name.length
+          assert valid_range.cover?(current_length),
+                 "must have a display_name no more than #{MAX_DISPLAY_NAME_LENGTH} " \
+                 "characters (currently #{current_length})"
+        end
+      end
+
+      it "has a valid created_by" do
+        metadata = metadata_for(topics_dir, topic) || {}
+
+        if (created_by = metadata["created_by"])
+          valid_range = 1..MAX_CREATED_BY_LENGTH
+          current_length = created_by.length
+          assert valid_range.cover?(current_length),
+                 "must have a created_by no more than #{MAX_CREATED_BY_LENGTH} " \
                  "characters (currently #{current_length})"
         end
       end
