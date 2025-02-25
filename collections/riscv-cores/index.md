@@ -20,9 +20,7 @@ items:
  - YosysHQ/picorv32
  - tomverbeure/mr1
  - olofk/serv
- - chipsalliance/Cores-VeeR
- - chipsalliance/Cores-VeeR-EL2
- - chipsalliance/Cores-VeeR-EH2
+ - chipsalliance/Cores-VeeR-EH1
  - ultraembedded/biriscv
  - atthecodeface/cdl_hardware
  - Domipheus/RPU
@@ -31,7 +29,7 @@ items:
  - SonalPinto/kronos
  - stevehoover/warp-v
  - stnolting/neorv32
- - rafaelcalcada/steel-core
+ - rafaelcalcada/riscv-steel
  - klessydra/T13x
  - klessydra/T03x
  - klessydra/T02x
