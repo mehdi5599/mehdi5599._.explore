@@ -11,6 +11,8 @@ items:
  - postcss/postcss
  - browserslist/browserslist
  - carloscuesta/gitmoji
+ - penpot/penpot
+ - taigaio/taiga-back
 display_name: Made in Spain
 created_by: eschiclers
 image: made-in-spain.png

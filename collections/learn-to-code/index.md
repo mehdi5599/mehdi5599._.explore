@@ -1,7 +1,7 @@
 ---
 items:
- - 30-seconds/30-seconds-of-code
- - railsgirls/railsgirls.github.io
+ - Chalarangelo/30-seconds-of-code
+ - railsgirls/guides.railsgirls.com
  - railsbridge/docs
  - freeCodeCamp/freeCodeCamp
  - leachim6/hello-world
@@ -33,6 +33,11 @@ items:
  - gothinkster/realworld
  - thedaviddias/Front-End-Checklist
  - gustavofreze/kotlin4noobs
+ - hexlet-basics/hexlet-basics
+ - hexlet-codebattle/codebattle
+ - Hexlet/hexletguides.github.io
+ - aykutkardas/regexlearn.com
+ - olexale/flutter_roadmap
 
 display_name: Learn to Code
 created_by: alysonla
